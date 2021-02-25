@@ -477,15 +477,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 181380679752732813, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.4
+      value: 237.15
       objectReference: {fileID: 0}
     - target: {fileID: 181380679752732813, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 186.8
+      value: 188.05
       objectReference: {fileID: 0}
     - target: {fileID: 181380679752732813, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 379.09
+      value: 375.09
       objectReference: {fileID: 0}
     - target: {fileID: 181380679752732813, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -514,94 +514,6 @@ PrefabInstance:
     - target: {fileID: 181380679752732813, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Id
-      value: dd35d243-48cf-4db1-afeb-119ec052477c
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Id
-      value: abc0f0a2-0b7e-4205-96c0-01bfdfcbfdd3
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Id
-      value: 3c0b0002-52a9-46a5-9b77-4e4f4fae76fa
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[8].m_Id
-      value: f98066d9-2992-4b85-8b56-4276d1e90490
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[9].m_Id
-      value: e14d77ac-78e2-432d-9c6c-3418c0e1abae
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Path
-      value: <Gamepad>/leftStick
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Name
-      value: down
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[8].m_Name
-      value: left
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[9].m_Name
-      value: right
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Flags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Flags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Flags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[8].m_Flags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[9].m_Flags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Action
-      value: Movement
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Action
-      value: Movement
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Action
-      value: Movement
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[8].m_Action
-      value: Movement
-      objectReference: {fileID: 0}
-    - target: {fileID: 181380679752732814, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: movement.m_SingletonActionBindings.Array.data[9].m_Action
-      value: Movement
       objectReference: {fileID: 0}
     - target: {fileID: 181380679752732819, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
       propertyPath: m_Name
