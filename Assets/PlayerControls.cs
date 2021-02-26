@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,17 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    private void ProcessRotation()
+    {
+        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
+    }
+
+    private void ProcessTranslation()
+    {
         float xThrow = movement.ReadValue<Vector2>().x;
         float yThrow = movement.ReadValue<Vector2>().y;
 
@@ -37,12 +49,11 @@ public class PlayerControls : MonoBehaviour
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, playerShipYRange.x, playerShipYRange.y);
 
-        transform.localPosition = new Vector3 
+        transform.localPosition = new Vector3
         (
             clampedXPos,
             clampedYPos,
             transform.localPosition.z
         );
-        
     }
 }
