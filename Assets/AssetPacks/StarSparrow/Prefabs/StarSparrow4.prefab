@@ -366,6 +366,8 @@ MonoBehaviour:
   controlSpeed: {x: 30, y: 30}
   playerShipXRange: {x: -8.5, y: 8.5}
   playerShipYRange: {x: -3, y: 9}
+  positionPitchFactor: -2
+  controlPitchFactor: -7
 --- !u!1 &1824090641654142
 GameObject:
   m_ObjectHideFlags: 0
