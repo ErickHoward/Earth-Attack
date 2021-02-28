@@ -364,10 +364,12 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 0
   controlSpeed: {x: 30, y: 30}
-  playerShipXRange: {x: -8.5, y: 8.5}
-  playerShipYRange: {x: -3, y: 9}
+  playerShipXRange: {x: -11, y: 11}
+  playerShipYRange: {x: -6, y: 12}
   positionPitchFactor: -2
   controlPitchFactor: -7
+  positionYawFactor: 2
+  controlRollFactor: 2
 --- !u!1 &1824090641654142
 GameObject:
   m_ObjectHideFlags: 0
