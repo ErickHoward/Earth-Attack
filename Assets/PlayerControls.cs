@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction fire;
     [SerializeField] Vector2 controlSpeed = new Vector2(30f,30f);
     [SerializeField] Vector2 playerShipXRange; // x value is how far left the ship can go, should be a minus number, y is how far right the ship can go, should be a positive number
     [SerializeField] Vector2 playerShipYRange; // x value is how far down the ship can go, should be a minus number, y is how far up the ship can go, should be a positive number
@@ -27,16 +28,19 @@ public class PlayerControls : MonoBehaviour
     private void OnEnable() 
     {
         movement.Enable();
+        fire.Enable();
     }
     private void OnDisable() 
     {
         movement.Disable();
+        fire.Disable();
     }
     // Update is called once per frame
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessRotation()
@@ -70,5 +74,17 @@ public class PlayerControls : MonoBehaviour
             clampedYPos,
             transform.localPosition.z
         );
+    }
+
+    private void ProcessFiring()
+    {
+        if (fire.ReadValue<float>() > 0.5)
+        {
+            print("Shooting");
+        }
+        else
+        {
+            print("Not Shooting");
+        }
     }
 }

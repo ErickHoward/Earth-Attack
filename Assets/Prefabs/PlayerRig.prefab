@@ -190,6 +190,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_Id
+      value: 586730bb-13f6-4613-9626-86da2a8a94d0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 3585ea24-4bef-4815-9123-161053f52cc6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Id
+      value: b23828aa-97ae-49b5-a190-2ba78d21358e
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/rightTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441754640377764580, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
 --- !u!4 &185793886803663650 stripped
