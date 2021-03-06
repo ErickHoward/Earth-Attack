@@ -365,9 +365,36 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement
       m_Flags: 0
+  fire:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 586730bb-13f6-4613-9626-86da2a8a94d0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 3585ea24-4bef-4815-9123-161053f52cc6
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
+    - m_Name: 
+      m_Id: b23828aa-97ae-49b5-a190-2ba78d21358e
+      m_Path: <Gamepad>/rightTrigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Fire
+      m_Flags: 0
   controlSpeed: {x: 30, y: 30}
   playerShipXRange: {x: -11, y: 11}
   playerShipYRange: {x: -6, y: 12}
+  lasers:
+  - {fileID: 6574217486475367822}
+  - {fileID: 2358329285555079175}
   positionPitchFactor: -2
   controlPitchFactor: -7
   positionYawFactor: 2
@@ -517,6 +544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}
+--- !u!1 &2358329285555079175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961067642205295678, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}
+  m_PrefabInstance: {fileID: 4291204066639453241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7854232087532500129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6301306794083412120, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}
@@ -579,6 +611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}
+--- !u!1 &6574217486475367822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961067642205295678, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}
+  m_PrefabInstance: {fileID: 4614873887164744112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1691645356728035624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6301306794083412120, guid: d47f751d7b9cb8c4ba719b285e28bdda, type: 3}

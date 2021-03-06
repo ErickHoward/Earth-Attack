@@ -11,7 +11,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] Vector2 controlSpeed = new Vector2(30f,30f);
     [SerializeField] Vector2 playerShipXRange; // x value is how far left the ship can go, should be a minus number, y is how far right the ship can go, should be a positive number
     [SerializeField] Vector2 playerShipYRange; // x value is how far down the ship can go, should be a minus number, y is how far up the ship can go, should be a positive number
-    
+    [SerializeField] GameObject[] lasers;
+
+
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -7f;
     [SerializeField] float positionYawFactor = 2f;
@@ -80,11 +82,29 @@ public class PlayerControls : MonoBehaviour
     {
         if (fire.ReadValue<float>() > 0.5)
         {
-            print("Shooting");
+            ActiveLasers();
+            
         }
         else
         {
-            print("Not Shooting");
+            DeactivateLasers();
+            
+        }
+    }
+
+    private void ActiveLasers()
+    {
+        foreach(GameObject laser in lasers)
+        {
+            laser.SetActive(true);
+        }
+    }
+
+    private void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
         }
     }
 }

@@ -519,25 +519,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRig
       objectReference: {fileID: 0}
-    - target: {fileID: 2368953835735953310, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: InitialModule.rotation3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2368953835735953310, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: ShapeModule.alignToDirection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2368953835735953310, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: InitialModule.startRotation.scalar
-      value: 0.017453292
-      objectReference: {fileID: 0}
-    - target: {fileID: 2368953835735953310, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: InitialModule.startRotationX.scalar
-      value: 0.017453292
-      objectReference: {fileID: 0}
-    - target: {fileID: 2368953835735953310, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
-      propertyPath: InitialModule.startRotationY.scalar
-      value: 0.017453292
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
