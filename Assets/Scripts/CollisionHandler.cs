@@ -13,4 +13,5 @@ public class CollisionHandler : MonoBehaviour
     {
         Debug.Log($"{this.name} ** Trigged by** {other.gameObject.name}");
     }
+    
 }
