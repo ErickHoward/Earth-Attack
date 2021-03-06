@@ -82,29 +82,21 @@ public class PlayerControls : MonoBehaviour
     {
         if (fire.ReadValue<float>() > 0.5)
         {
-            ActiveLasers();
+            SetLasersActive(true);
             
         }
         else
         {
-            DeactivateLasers();
-            
+            SetLasersActive(false);
         }
     }
 
-    private void ActiveLasers()
+    private void SetLasersActive(bool isActive)
     {
         foreach(GameObject laser in lasers)
         {
-            laser.SetActive(true);
-        }
-    }
-
-    private void DeactivateLasers()
-    {
-        foreach (GameObject laser in lasers)
-        {
-            laser.SetActive(false);
+            var emmissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emmissionModule.enabled = isActive;
         }
     }
 }
