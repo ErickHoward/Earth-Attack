@@ -6,17 +6,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerControls : MonoBehaviour
 {
+    [Header("General Setup Settings")]
     [SerializeField] InputAction movement;
     [SerializeField] InputAction fire;
-    [SerializeField] Vector2 controlSpeed = new Vector2(30f,30f);
-    [SerializeField] Vector2 playerShipXRange; // x value is how far left the ship can go, should be a minus number, y is how far right the ship can go, should be a positive number
-    [SerializeField] Vector2 playerShipYRange; // x value is how far down the ship can go, should be a minus number, y is how far up the ship can go, should be a positive number
-    [SerializeField] GameObject[] lasers;
+    [Tooltip("How fast the ship moves")] [SerializeField] Vector2 controlSpeed = new Vector2(30f, 30f);
+    [Tooltip("How far the player can move left and right, x value is how far left the ship can go, should be a minus number, y is how far right the ship can go, should be a positive number")]
+    [SerializeField] Vector2 playerShipXRange;
+    [Tooltip("How far the player can move up and down,  x value is how far down the ship can go, should be a minus number, y is how far up the ship can go, should be a positive number")]
+    [SerializeField] Vector2 playerShipYRange;
+    [Tooltip("A array of lasers of types GameObject")] [SerializeField] GameObject[] lasers;
 
-
+    [Header("Screen position based tuning")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -7f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Player input based tuning")]
+    [SerializeField] float controlPitchFactor = -7f;
     [SerializeField] float controlRollFactor = -20f;
     
     float xThrow, yThrow;
