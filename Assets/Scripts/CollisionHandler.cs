@@ -1,17 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CollisionHandler : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log(this.name + "--bumped into--" + other.gameObject.name);
-    }
-    
+    [SerializeField] float levelLoadDelay = 1f;
     private void OnTriggerEnter(Collider other) 
     {
-        Debug.Log($"{this.name} ** Trigged by** {other.gameObject.name}");
+        switch (other.gameObject.tag)
+        {
+            case "Terrain":
+                break;
+            case "Friendly":
+                print("This thing is friendly");
+                break;
+            default:
+                StartCrashSequence();
+                break;
+        }
+
     }
-    
+    private void StartCrashSequence()
+    {
+        GetComponent<PlayerControls>().enabled = false;
+        Invoke(nameof(ReloadLevel), levelLoadDelay);
+    }
+
+    private void ReloadLevel()
+    {
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+
+    }
 }
