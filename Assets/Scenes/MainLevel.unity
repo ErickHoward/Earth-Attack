@@ -156,8 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!135 &55149630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -438,8 +440,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!95 &142674000 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 181380679752732812, guid: 84630090388187d4a9e283ceb21b910f, type: 3}
@@ -478,8 +482,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!135 &184908622
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -641,8 +647,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!135 &672319045
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -853,8 +861,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!4 &849480447 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8364515849976409852, guid: 9c26d38706485ae4b8046f74db40734f, type: 3}
@@ -893,8 +903,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!135 &1679770745
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1078,8 +1090,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
+  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   parent: {fileID: 849480447}
   value: 5
+  hitPoints: 6
 --- !u!135 &2082016452
 SphereCollider:
   m_ObjectHideFlags: 0
