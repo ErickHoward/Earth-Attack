@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject deathFX;
-    [SerializeField] GameObject hitFX;
-    [SerializeField] Transform parent;
-    [SerializeField] int value;
-    [SerializeField] int hitPoints = 10;
+    [SerializeField] private GameObject deathFX;
+    [SerializeField] private GameObject hitFX;
+    [SerializeField] private int value;
+    [SerializeField] private int hitPoints = 10;
 
 
-    Scoreboard scoreboard;
-
+    private Scoreboard scoreboard;
+    private GameObject parentGameObject;
     private void Start()
     {
+        parentGameObject = GameObject.FindWithTag("SpawnedAtRuntime");
         scoreboard = FindObjectOfType<Scoreboard>();
         AddRigidbody();
 
@@ -41,7 +39,7 @@ public class Enemy : MonoBehaviour
     private void ProcessHit()
     {
         GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         scoreboard.UpdateScore(value);
         hitPoints--;
     }
@@ -49,7 +47,7 @@ public class Enemy : MonoBehaviour
     {
 
         GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 

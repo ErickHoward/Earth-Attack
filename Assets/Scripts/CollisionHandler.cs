@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] float levelLoadDelay = 1f;
-    [SerializeField] ParticleSystem explosionFX;
+    [SerializeField] private float levelLoadDelay = 1f;
+    [SerializeField] private ParticleSystem explosionFX;
     private void OnTriggerEnter(Collider other) 
     {
         switch (other.gameObject.tag)
