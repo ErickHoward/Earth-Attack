@@ -13,10 +13,22 @@ public class Enemy : MonoBehaviour
 
     Scoreboard scoreboard;
 
-    private void Start() 
+    private void Start()
     {
         scoreboard = FindObjectOfType<Scoreboard>();
+        AddRigidbody();
+
     }
+
+    private void AddRigidbody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.drag = 1000000f;
+        rb.angularDrag = 1000000f;
+        rb.useGravity = false;
+
+    }
+
     private void OnParticleCollision(GameObject other)
     {
         ProcessHit();
