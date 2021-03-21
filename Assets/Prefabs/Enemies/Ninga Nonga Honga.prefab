@@ -1575,9 +1575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
   hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
-  parent: {fileID: 0}
-  value: 5
-  hitPoints: 16
+  value: 20
+  hitPoints: 50
 --- !u!95 &678503262
 Animator:
   serializedVersion: 3

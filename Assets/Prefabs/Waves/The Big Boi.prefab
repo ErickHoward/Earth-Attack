@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2360339438304664319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8826925722585521060}
+  - component: {fileID: 6195783827647826354}
+  m_Layer: 0
+  m_Name: The Big Boi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8826925722585521060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360339438304664319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 580.99976, y: 233.76791, z: 754.59814}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children:
+  - {fileID: 8047718433008527155}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &6195783827647826354
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360339438304664319}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: aa5cc0148020e944a9e127da4ad8b959, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 7201118952933536204, guid: aa5cc0148020e944a9e127da4ad8b959, type: 2}
+    value: {fileID: 2867290250760932804}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1001 &2867290250365562522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8826925722585521060}
+    m_Modifications:
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7414007
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.06833076
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6647573
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.061266977
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -10.532
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -83.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220465592930565853, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+      propertyPath: m_Name
+      value: Ninga Nonga Honga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+--- !u!4 &8047718433008527155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5216738523631897001, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+  m_PrefabInstance: {fileID: 2867290250365562522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2867290250760932804 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 678503262, guid: e4b652ca5e52fd443b5a814d5909a9fd, type: 3}
+  m_PrefabInstance: {fileID: 2867290250365562522}
+  m_PrefabAsset: {fileID: 0}
