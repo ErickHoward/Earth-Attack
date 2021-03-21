@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject deathFX;
-    [SerializeField] private GameObject hitFX;
+    [SerializeField] private GameObject hitVFX;
     [SerializeField] private int value;
     [SerializeField] private int hitPoints = 10;
     [SerializeField] private bool pointsOnDeath = false;
@@ -11,11 +11,13 @@ public class Enemy : MonoBehaviour
 
     private Scoreboard scoreboard;
     private GameObject parentGameObject;
+    private AudioSource audioSource;
     private void Start()
     {
         parentGameObject = GameObject.FindWithTag("SpawnedAtRuntime");
         scoreboard = FindObjectOfType<Scoreboard>();
         AddRigidbody();
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -53,8 +55,8 @@ public class Enemy : MonoBehaviour
         {
             scoreboard.UpdateScore(value);
         }
-        GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parentGameObject.transform;
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 

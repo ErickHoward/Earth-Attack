@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 3180491279639547967}
   - component: {fileID: 3172895373579147957}
   - component: {fileID: 1734087444767985946}
+  - component: {fileID: 6419837793071285355}
   m_Layer: 0
   m_Name: Badonga Badonga Ba
   m_TagString: Untagged
@@ -272,9 +273,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4537013557932990623, guid: 13de20a35c195ee4f87bdfb107c5c2f7, type: 3}
-  hitFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
+  hitVFX: {fileID: 4537013557932990623, guid: 637c903ebd8191a48a7e0be9c249a923, type: 3}
   value: 15
-  hitPoints: 10
+  hitPoints: 15
+  pointsOnDeath: 1
+--- !u!65 &6419837793071285355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3197300561978387563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.926746, y: 5.14402, z: 13.02625}
+  m_Center: {x: -0.00000047683716, y: -0.00000059604645, z: 0}
 --- !u!1 &3197327603462555007
 GameObject:
   m_ObjectHideFlags: 0
