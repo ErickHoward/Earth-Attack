@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject hitFX;
     [SerializeField] private int value;
     [SerializeField] private int hitPoints = 10;
+    [SerializeField] private bool pointsOnDeath = false;
 
 
     private Scoreboard scoreboard;
@@ -40,12 +41,18 @@ public class Enemy : MonoBehaviour
     {
         GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
-        scoreboard.UpdateScore(value);
+        if (pointsOnDeath == false)
+        {
+            scoreboard.UpdateScore(value);
+        }
         hitPoints--;
     }
     private void KillEnemy()
     {
-
+        if (pointsOnDeath == true)
+        {
+            scoreboard.UpdateScore(value);
+        }
         GameObject vfx = Instantiate(deathFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
